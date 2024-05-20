@@ -93,9 +93,9 @@ for k,v in pairs(Config.Locations) do
                                 }) 
                             then 
                                 action = false
-                                if self.currentDistance < 2 then
+                                --if self.currentDistance < 2 then --- that useless because we check before if currentDistance < 1 
                                     TriggerServerEvent("src-weed:server:interact", self.key, self.coords, self.id)
-                                end  
+                                --end  
                             else
                                 action = false
                             end
